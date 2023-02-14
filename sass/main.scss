@@ -2,9 +2,401 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding: 1rem;
+    // scroll-padding: 1rem;
 }
 
 body {
-    // background: #222;
+    isolation: isolate;
 }
+
+.logo-title {
+    color: $orange-text;
+    @include fredokaFont(medium);
+    & > span {
+        color: $cyan-text;
+        @include fredokaFont(medium);
+        @include fontSizeClamp($h3-m, $h3-d); 
+        @include lineHeightClamp($h3-line-height-m, $h3-line-height-d);
+    }
+}
+
+.blobs-container {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.wrapper {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 $body-space;
+
+    & > header {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        
+    }
+    
+    & > main {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        gap: $section-space;
+
+        & > section {
+            position: relative;
+            width: 100%;
+            &:has(.projects-title){
+                gap: $title-and-content-space;
+
+                & > .projects-title > h2 {
+                    color: $orange-text;
+                }
+            }
+        }
+    }
+    & > footer {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+
+
+    // dynamic styling
+    & > header {
+        padding-top: 50px;
+
+        & > nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & > ul {
+                display: flex;
+                gap: 40px;
+                & > li {
+                    & > a {
+
+                    }
+
+                    &.active {
+                        & > a {
+                            color: $orange-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & > main {
+        min-height: 6192px;
+
+        // Hero Banner
+        & > section:nth-child(1){
+            display: flex;
+            gap: 40px;
+
+            & > .hero-content-container {
+                box-sizing: border-box;
+                width: 567px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                position: relative;
+                
+
+                & > .hero-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 35px;
+                    width: 100%;
+
+                    & > p {
+                        color: $light-grey-text;
+                        width: 100%;
+                    }
+
+                    & > button {
+                        padding: 15px 70px;
+                        border-radius: 5px;
+                        background-color: $cyan-bg;
+                        color: $white-text;
+                        width: fit-content;
+                    }
+                }
+            }
+
+            & > .hero-image-container {
+                width: auto;
+                position: relative;
+                height: 600px;
+
+                & > .hero-image {
+                    height: 100%;
+                    width: 100%;
+                    position: relative;
+                    transform: translateY(30px);
+
+                    & > img {
+                        height: 100%;
+                        background-size: cover;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+
+        // Projects
+        & > section:nth-child(2){
+            display: flex;
+            flex-direction: column;
+
+            & > .projects-title {
+                position: relative;
+                width: 100%;
+
+                & > h2 {
+                    margin: 0 auto;
+                    width: fit-content;
+                }
+            }
+
+            & > .projects-content {
+                display: flex;
+                flex-direction: column;
+                gap: 90px;
+                position: relative;
+                width: 100%;
+
+                & > .project-card {
+                    display: flex;
+                    gap: 100px;
+                    position: relative;
+                    min-height: 375px;
+                    width: 100%;
+
+                    & > .project-card-image-container {
+                        height: 375px;
+                        width: 570px;
+                        position: absolute;
+
+                        & > img {
+                            height: 100%;
+                            background-size: cover;    
+                            object-fit: cover;
+                        }
+                    }
+
+                    & > .project-card-content-container {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+                        margin-left: 626px;
+                        position: relative;
+
+                        & > p {
+                            width: 70%;
+                            color: $light-grey-text;
+                        }
+
+                        
+
+                        & > .language-used {
+                            display: flex;
+                            gap: 30px;
+                            margin-top: auto;
+
+                            & > span {
+                                width: 44px;
+                                height: 44px;
+                                background-color: #dbdbdb;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        // About Me
+        & > section:nth-child(3){}
+        
+        // Skills
+        & > section:nth-child(4){}
+        
+        // Education
+        & > section:nth-child(5){}
+        
+        // Sayings
+        & > section:nth-child(6){}
+    }
+
+    & > footer {
+        padding-bottom: $footer-space;
+
+        & > .footer-content {
+            display: flex;
+            gap: 95px;
+
+            & > .footer-content-container1 { width: 317px; }
+            & > .footer-content-container2 { width: 175px; }
+            & > .footer-content-container3 { width: 254px; }
+            & > .footer-content-container4 { width: 441px; }
+
+            & > .footer-content-container1 { 
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+
+                & > .container1-top {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                    width: 100%;
+                    & > p {
+                        color: $light-grey-text;
+                    }
+                }
+
+                & > .container1-bottom {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    position: relative;
+                    width: 100%;
+
+                    & > .container-title {
+                        display: flex;
+                        height: 65px;
+                        & > h6 { 
+                            @include fredokaFont(medium);
+                            align-self: end;
+                        }
+                    }
+
+                    & > p {
+                        color: $light-grey-text;
+                        width: 85%;
+                    }
+                }
+            }
+            & > .footer-content-container2 {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                & > .container-title {
+                    display: flex;
+                    height: 65px;
+                    & > h6 { 
+                        @include fredokaFont(medium);
+                        align-self: end;
+                    }
+                }
+
+                & > a {
+                    color: $light-grey-text;
+                    &.active {
+                        color: $orange-text;
+                    }
+                }
+            }
+            & > .footer-content-container3 {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                & > .container-title {
+                    display: flex;
+                    height: 65px;
+
+                    & > h6 { 
+                        @include fredokaFont(medium);
+                        align-self: end;
+                    }
+                }
+
+                & > p {
+                    word-break: break-all;
+                    color: $light-grey-text;
+                }
+            }
+            & > .footer-content-container4 {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                & > .container-title {
+                    display: flex;
+                    height: 65px;
+
+                    & > h4 { 
+                        @include fredokaFont(medium);
+                        align-self: end;
+                    }
+                }
+
+                & > p {
+                    color: $light-grey-text;
+                }
+
+                & > form {
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    & > textarea {
+                        width: 100%;
+                        border-radius: 10px;
+                        background-color: $empty-grey-bg;
+                        color: $black-text;
+                        box-sizing: border-box;
+                        padding: 15px 30px;
+                        border: none;
+                        
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    & > .email-field {
+                        width: 100%;
+                        position: relative;
+                        display: flex;
+
+                        & > input {
+                            background-color: $empty-grey-bg;
+                            padding: 10px 30px;
+                            box-sizing: border-box;
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            width: 80%;
+                        }
+
+                        & > button {
+                            width: 20%;
+                            border-top-right-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            box-sizing: border-box;
+                            background-color: $cyan-bg;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

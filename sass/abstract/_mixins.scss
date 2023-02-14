@@ -22,10 +22,10 @@
 
 
 @mixin fredokaFont($type){
-    @if $type == 'regular' {
-        font-weight: 400;
-    } @else if $type == 'medium' {
+    @if $type == 'medium' {
         font-weight: 500;
+    } @else {
+        font-weight: 400;
     }
 }
 
