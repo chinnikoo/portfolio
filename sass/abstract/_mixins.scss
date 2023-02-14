@@ -1,0 +1,38 @@
+@import './vars';
+
+@mixin respond-to($breakpoint: desktop){
+    @if $breakpoint == 'mobile'{
+        @media screen and (max-width: $mobile){
+            @content;
+        }
+    } @else if $breakpoint == 'mobile-horizontal' {
+        @media screen and (min-width: $mobile + 1) and (max-width: $mobile-horizontal){
+            @content;
+        }
+    } @else if $breakpoint == 'laptop' {
+        @media screen and (min-width: $laptop-min) and (max-width: $laptop-max) {
+            @content;
+        }
+    } @else if $breakpoint == 'desktop' {
+        @media screen and (min-width: $laptop-max + 1) and (max-width: $desktop){
+            @content;
+        }
+    }
+}
+
+
+@mixin fredokaFont($type){
+    @if $type == 'regular' {
+        font-weight: 400;
+    } @else if $type == 'medium' {
+        font-weight: 500;
+    }
+}
+
+@mixin fontSizeClamp($min: 1.0, $max: 2.0){
+    font-size: clamp(($min) * 1rem, ($max * 10 / 1920)* 100vw, ($max) * 1rem);
+}
+
+@mixin lineHeightClamp($min: 1.0, $max: 2.0){
+    line-height: clamp(($min) * 1rem, ($max * 10 / 1920)* 100vw, ($max) * 1rem);
+}

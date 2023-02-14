@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap');
+@import './abstract/vars';
+@import './abstract/mixins';
+
+:root {
+    font-size: 10px;
+}
+
+*,
+*::after,
+*::before { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: $black-text;
+    @include fredokaFont('regular');
+}
+
+html {
+    min-height: 100vh;
+    position: relative;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+a { text-decoration: none; }
+hr { height: 1px solid $black-bg; }
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+input[type="search"],
+input[type="text"] {
+    text-indent: 1rem;
+    border: none;
+}
+
+header {
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+}
+
+main {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    & > section {
+        padding: $section-space 0;
+    }
+}
+
+footer {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+}
+
+h1 { @include fontSizeClamp($h1-m, $h1-d); @include lineHeightClamp($h1-line-height-m, $h1-line-height-d); }
+h2 { @include fontSizeClamp($h2-m, $h2-d); @include lineHeightClamp($h2-line-height-m, $h2-line-height-d); }
+h3 { @include fontSizeClamp($h3-m, $h3-d); @include lineHeightClamp($h3-line-height-m, $h3-line-height-d); }
+h4 { @include fontSizeClamp($h4-m, $h4-d); @include lineHeightClamp($h4-line-height-m, $h4-line-height-d); }
+h5 { @include fontSizeClamp($h5-m, $h5-d); @include lineHeightClamp($h5-line-height-m, $h5-line-height-d); }
+h6 { @include fontSizeClamp($h6-m, $h6-d); @include lineHeightClamp($h6-line-height-m, $h6-line-height-d); }
+
+p, 
+b,  
+i,
+a, 
+ol,
+ul, 
+li, 
+button, 
+input,
+div,
+span {
+    @include fontSizeClamp($normal-text-m, $normal-text-d); 
+    @include lineHeightClamp($normal-line-height-m, $normal-line-height-d); 
+}
+
+li {
+    list-style: none; 
+}
+
+main {
+    section{
+        padding: 0 $global-space;  
+    }
+}
