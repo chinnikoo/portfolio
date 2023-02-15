@@ -190,6 +190,12 @@ body {
 .wrapper > main > section:has(.projects-title) > .projects-title > h2 {
   color: #FF9C40;
 }
+.wrapper > main > section:has(.about-title) {
+  gap: 90px;
+}
+.wrapper > main > section:has(.about-title) > .about-title > h2 {
+  color: #FF9C40;
+}
 .wrapper > footer {
   grid-column: 1/-1;
   grid-row: 3/4;
@@ -320,6 +326,50 @@ body {
   height: 44px;
   background-color: #dbdbdb;
   border-radius: 5px;
+}
+.wrapper > main > section:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main > section:nth-child(3) > .about-title {
+  position: relative;
+  width: 100%;
+}
+.wrapper > main > section:nth-child(3) > .about-title > h2 {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.wrapper > main > section:nth-child(3) > .about-wrapper {
+  display: flex;
+  gap: 45px;
+  border: 1px solid green;
+}
+.wrapper > main > section:nth-child(3) > .about-wrapper > .about-image-container {
+  width: auto;
+  position: relative;
+  height: 600px;
+  border: 1px solid red;
+}
+.wrapper > main > section:nth-child(3) > .about-wrapper > .about-image-container > .about-image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform: translateY(30px);
+}
+.wrapper > main > section:nth-child(3) > .about-wrapper > .about-image-container > .about-image > img {
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.wrapper > main > section:nth-child(3) > .about-wrapper > .about-content-container {
+  position: relative;
+  width: 100%;
+  margin-left: 626px;
+  border: 1px solid blue;
 }
 .wrapper > footer {
   padding-bottom: 135px;
