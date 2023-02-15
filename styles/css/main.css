@@ -276,7 +276,7 @@ body {
   width: 100%;
 }
 .wrapper > main > section:nth-child(2) > .projects-title > h2 {
-  margin: 0 auto;
+  margin-left: 626px;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -336,13 +336,12 @@ body {
   width: 100%;
 }
 .wrapper > main > section:nth-child(3) > .about-title > h2 {
-  margin: 0 auto;
+  margin-left: 626px;
   width: -moz-fit-content;
   width: fit-content;
 }
 .wrapper > main > section:nth-child(3) > .about-wrapper {
   display: flex;
-  gap: 45px;
   border: 1px solid green;
 }
 .wrapper > main > section:nth-child(3) > .about-wrapper > .about-image-container {
