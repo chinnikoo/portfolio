@@ -173,7 +173,7 @@ body {
                 width: 100%;
 
                 & > h2 {
-                    margin: 0 auto;
+                    margin-left: 626px;
                     width: fit-content;
                 }
             }
@@ -245,14 +245,13 @@ body {
                 width: 100%;
 
                 & > h2 {
-                    margin: 0 auto;
+                    margin-left: 626px;
                     width: fit-content;
                 }
             }
 
             & > .about-wrapper {
                 display: flex;
-                gap: 45px;
                 border: 1px solid green;
 
                 & > .about-image-container {
