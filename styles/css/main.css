@@ -276,7 +276,7 @@ body {
   width: 100%;
 }
 .wrapper > main > section:nth-child(2) > .projects-title > h2 {
-  margin: 0 auto;
+  margin-left: 626px;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -336,7 +336,7 @@ body {
   width: 100%;
 }
 .wrapper > main > section:nth-child(3) > .about-title > h2 {
-  margin: 0 auto;
+  margin-left: 626px;
   width: -moz-fit-content;
   width: fit-content;
 }
