@@ -216,8 +216,6 @@ body {
                             color: $light-grey-text;
                         }
 
-                        
-
                         & > .language-used {
                             display: flex;
                             gap: 30px;
@@ -252,13 +250,11 @@ body {
 
             & > .about-wrapper {
                 display: flex;
-                border: 1px solid green;
 
                 & > .about-image-container {
                     width: auto;
                     position: relative;
                     height: 600px;
-                    border: 1px solid red;
 
                     & > .about-image {
                         height: 100%;
@@ -271,8 +267,8 @@ body {
                             background-size: cover;
                             position: absolute;
                             top: 50%;
-                            left: 0;
-                            transform: translateY(-50%);
+                            left: 50%;
+                            transform: translate(60%, -60%);
                         }
                     }
                 }
@@ -281,22 +277,32 @@ body {
                     position: relative;
                     width: 100%;
                     margin-left: 626px;
-                    border: 1px solid blue;
+                    
                     & > .about-content {
-                        
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+                        position: relative;
+                        width: 100%;
 
                         & > h4 {
-    
+                            
                         }
     
                         & > p {
-    
+                            color: $light-grey-text;
                         }
     
                         & > .hobbies {
+                            display: flex;
+                            gap: 30px;
+                            margin-top: auto;
     
-                            & > .icon {
-    
+                            & > span {
+                                width: 140px;
+                                height: 140px;
+                                background-color: #dbdbdb;
+                                border-radius: 15px;
                             }
                         }
                     }
@@ -305,10 +311,81 @@ body {
         }
         
         // Skills
-        & > section:nth-child(4){}
+        & > section:nth-child(4){
+            
+
+            & > .skills-container {
+                display: flex;
+                background-color: $violet-bg;
+                margin: 110px 0;
+                height: 413px;
+                border-radius: 55px;
+
+                & > .skills-image-container {
+                    width: auto;
+                    position: relative;
+                    height: 600px;
+
+                    & > .skills-image {
+                        height: 100%;
+                        width: 100%;
+                        position: relative;
+                        transform: translateY(30px);
+
+                        & > img {
+                            height: 100%;
+                            background-size: cover;
+                            position: absolute;
+                            top: 15%;
+                            left: 0%;
+                            transform: translateY(-50%);
+
+                        }
+                    }
+                }
+
+                & > .skills-content-container {
+                    position: relative;
+                    width: 100%;
+                    margin-left: 626px;
+                    margin-top: 40px;
+
+                    & > .skills-content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+                        position: relative;
+                        width: 100%;
+
+                        & > h2 {
+
+                        }
+                        & > p {
+                            width: 60%;
+                            color: $light-grey-text;
+                        }
+
+                        & > .skills {
+                            display: flex;
+                            gap: 30px;
+                            margin-top: auto;
+
+                            & > span {
+                                width: 85px;
+                                height: 82px;
+                                background-color: #dbdbdb;
+                                border-radius: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         
         // Education
-        & > section:nth-child(5){}
+        & > section:nth-child(5){
+            
+        }
         
         // Sayings
         & > section:nth-child(6){}
