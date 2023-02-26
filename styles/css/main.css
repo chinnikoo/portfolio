@@ -161,11 +161,6 @@ body {
   height: 100%;
   overflow: hidden;
 }
-@media screen and (min-width: 992px) and (max-width: 1680px) {
-  .blobs-container {
-    display: none;
-  }
-}
 .blobs-container > .blobs-wrapper {
   position: relative;
   height: 100%;
@@ -185,39 +180,39 @@ body {
 }
 .blobs-container > .blobs-wrapper > .blobs.blobs1 {
   background-image: url("../../img/blobs/blob1.svg");
-  width: 525px;
-  top: 600px;
-  left: -245px;
+  width: min(525px, 31.25vw);
+  top: min(600px, 40vw);
+  left: min(-45px, -18.3266475645vw);
 }
 .blobs-container > .blobs-wrapper > .blobs.blobs2 {
   background-image: url("../../img/blobs/blob2.svg");
-  width: 583px;
-  top: 910px;
-  right: -245px;
+  width: min(583px, 33.3333333333vw);
+  top: min(910px, 62.5vw);
+  right: min(-105px, -14.3266475645vw);
 }
 .blobs-container > .blobs-wrapper > .blobs.blobs3 {
   background-image: url("../../img/blobs/blob3.svg");
-  width: 277px;
-  top: 1740px;
-  right: 262px;
+  width: min(277px, 15.873015873vw);
+  top: min(1740px, 103.0927835052vw);
+  right: min(262px, 17.5438596491vw);
 }
 .blobs-container > .blobs-wrapper > .blobs.blobs4 {
   background-image: url("../../img/blobs/blob4.svg");
-  width: 305px;
-  top: 3039px;
-  left: -85px;
+  width: min(305px, 11.9253731343vw);
+  top: min(3039px, 172.4137931034vw);
+  left: min(-25px, -1vw);
 }
 .blobs-container > .blobs-wrapper > .blobs.blobs5 {
   background-image: url("../../img/blobs/blob5.svg");
-  width: 224px;
-  top: 3922px;
-  right: -60px;
+  width: min(224px, 8.3333333333vw);
+  top: min(3922px, 256.2702702703vw);
+  right: min(-20px, -1.571429vw);
 }
 .blobs-container > .blobs-wrapper > .blobs.blobs6 {
   background-image: url("../../img/blobs/blob6.svg");
-  width: 644px;
-  bottom: -556px;
-  left: 400px;
+  width: min(644px, 33.3333333333vw);
+  bottom: min(-300px, -27.326648vw);
+  left: min(400px, 26.3157894737vw);
 }
 
 .wrapper {
@@ -407,7 +402,7 @@ body {
   width: 80%;
 }
 .wrapper > main > section:nth-child(1) > .hero-content-container > .hero-content > button {
-  padding: 15px 50px;
+  padding: min(15px, 1vw) min(50px, 2.8571428571vw);
   border-radius: 5px;
   background-color: #71D6DF;
   color: #fff;
@@ -575,7 +570,7 @@ body {
   left: 0;
   bottom: 0;
   background-color: #F4EDFF;
-  height: min(300px, 16.6666666667vw);
+  height: min(300px, 18.1818181818vw);
   width: 100%;
   border-radius: 15px;
   z-index: 1;
@@ -674,7 +669,7 @@ body {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
-  gap: 30px;
+  gap: min(30px, 1.4285714286vw);
 }
 .wrapper > main > section:nth-child(5) > .education-wrapper > .education-content-top > .content-top-info > .primary > span,
 .wrapper > main > section:nth-child(5) > .education-wrapper > .education-content-top > .content-top-info .secondary > span {
@@ -708,7 +703,7 @@ body {
   width: 90%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: min(30px, 1.4285714286vw);
   padding-left: 80px;
 }
 .wrapper > main > section:nth-child(5) > .education-wrapper > .education-content-bottom > .content-bottom-info > .shs > span,
