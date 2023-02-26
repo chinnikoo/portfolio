@@ -238,7 +238,7 @@ body {
             & > ul {
                 display: flex;
                 justify-content: space-between;
-                // gap: 50px;
+                align-items: center;
 
                 & > li {
                     & > a {
@@ -352,9 +352,9 @@ body {
                                 background-size: cover;
                                 object-fit: cover;
 
-                                &:nth-child(1){ background-image:url("../../img/icons/html.png"); }
-                                &:nth-child(2){ background-image:url("../../img/icons/css.png"); }
-                                &:nth-child(3){ background-image:url("../../img/icons/javascript.png"); }
+                                &:nth-child(1){ background-image:url("../../img/icons/colored-svg/html.svg"); }
+                                &:nth-child(2){ background-image:url("../../img/icons/colored-svg/css.svg"); }
+                                &:nth-child(3){ background-image:url("../../img/icons/colored-svg/javascript.svg"); }
                             }
                         }
                     }
@@ -425,10 +425,10 @@ body {
                                     width: 100%;
                                 }
 
-                                &:nth-child(1) { &::after { background-image: url("../../img/icons/game.png"); }}
-                                &:nth-child(2) { &::after { background-image: url("../../img/icons/code.png"); }}
-                                &:nth-child(3) { &::after { background-image: url("../../img/icons/film.png"); }}
-                                &:nth-child(4) { &::after { background-image: url("../../img/icons/music.png"); }}
+                                &:nth-child(1) { &::after { background-image: url("../../img/icons/game.svg"); }}
+                                &:nth-child(2) { &::after { background-image: url("../../img/icons/code.svg"); }}
+                                &:nth-child(3) { &::after { background-image: url("../../img/icons/film.svg"); }}
+                                &:nth-child(4) { &::after { background-image: url("../../img/icons/music.svg"); }}
                             }
                         }
                     }
@@ -449,8 +449,7 @@ body {
 
                     & > .skills-image {
                         position: relative;
-                        // height: Min(400px, 100vw/4.9);
-                        height: Min(400px, 100vw/4);
+                        height: Min(400px, 100vw/4.4);
                         width: 100%;
 
                         & > img {
@@ -465,19 +464,16 @@ body {
                 
                 & > .skills-content-container {
                     width: 100%;
-                    display: flex;
-                    align-self: flex-end;
-                    overflow-x: hidden;
+                    margin-top: auto;
                     padding-bottom: Min(20px, 100vw/100);
 
                     &::before {
-                        content: '';
+                        content: "";
                         position: absolute;
                         left: 0;
                         bottom: 0;
                         background-color: $violet-bg;
-                        // height: Min(275px, 100vw/6.8);
-                        height: Min(275px, 100vw/6);
+                        height: Min(300px, 100vw/6);
                         width: 100%;
                         border-radius: 15px;
                         z-index: 1;
@@ -488,29 +484,54 @@ body {
                         flex-direction: column;
                         gap: Min(20px, 100vw/100);
                         position: relative;
+                        bottom: Min(10px, 100vw/100);
                         width: 100%;
                         padding-right: Min(90px, 100vw/19);
                         z-index: 2;
 
+                        & > h4 {
+                            color: $violet-text;
+                        }
+
                         & > p {
                             width: 80%;
-                            color: $light-grey-text;
+                            color: $light-violet-text;
                         }
 
                         & > .skills {
                             position: relative;
                             overflow-x: auto;
                             width: 100%;
+                            padding-bottom: 20px;
 
                             /* width */
                             &::-webkit-scrollbar {
-                                width: 0px;
+                                width: 10px;
+                                height: 5px;
+                            }
+                            
+                            /* Track */
+                            &::-webkit-scrollbar-track {
+                                background: $white-bg;
+                                border-radius: 5px;
+                            }
+                            
+                            /* Handle */
+                            &::-webkit-scrollbar-thumb {
+                                background: #dfd3f1;
+                                border-radius: 5px;
+                            }
+                            
+                            /* Handle on hover */
+                            &::-webkit-scrollbar-thumb:hover {
+                                background: darken(#dfd3f1, 10%);
                             }
 
                             & > .language-used-scrollable {
                                 min-width: max-content;
                                 display: flex;
                                 gap: Min(20px, 100vw/100);
+                                width: 100%;
 
                                 & > span {
                                     display: inline-block;
@@ -520,14 +541,14 @@ body {
                                     background-size: cover;
                                     object-fit: cover;
 
-                                    &:nth-child(1){ background-image: url("../../img/icons/html-skill.png"); }
-                                    &:nth-child(2){ background-image: url("../../img/icons/css-skill.png"); }
-                                    &:nth-child(3){ background-image: url("../../img/icons/javascript-skill.png"); }
-                                    &:nth-child(4){ background-image: url("../../img/icons/sass.png"); }
-                                    &:nth-child(5){ background-image: url("../../img/icons/figma.png"); }
-                                    &:nth-child(6){ background-image: url("../../img/icons/sql.png"); }
-                                    &:nth-child(7){ background-image: url("../../img/icons/java.png"); }
-                                    &:nth-child(8){ background-image: url("../../img/icons/git.png"); }
+                                    &:nth-child(1){ background-image: url("../../img/icons/html-skill.svg"); }
+                                    &:nth-child(2){ background-image: url("../../img/icons/css-skill.svg"); }
+                                    &:nth-child(3){ background-image: url("../../img/icons/javascript-skill.svg"); }
+                                    &:nth-child(4){ background-image: url("../../img/icons/sass.svg"); }
+                                    &:nth-child(5){ background-image: url("../../img/icons/figma.svg"); }
+                                    &:nth-child(6){ background-image: url("../../img/icons/sql.svg"); }
+                                    &:nth-child(7){ background-image: url("../../img/icons/java.svg"); }
+                                    &:nth-child(8){ background-image: url("../../img/icons/git.svg"); }
                                 }
                             }
 
@@ -805,7 +826,7 @@ body {
                                         top: 50%;
                                         left: 50%;
                                         transform: translate(-50%, -50%);
-                                        background-image: url(../../img/icons/submit.png);
+                                        background-image: url("../../img/icons/submit.svg");
                                         background-repeat: no-repeat;
                                         background-size: cover;
                                         object-fit: cover;
