@@ -223,10 +223,11 @@ body {
 .wrapper {
   z-index: 2;
   position: relative;
-  width: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  padding: 0 min(440px, 17.8571428571vw);
 }
 .wrapper > header {
   grid-column: 1/-1;
@@ -249,7 +250,7 @@ body {
   position: relative;
   width: 100%;
   display: grid;
-  grid-template-columns: min(462px, 26.3157894737vw) auto;
+  grid-template-columns: min(462px, 26.3157894737vw) min(511px, 33.3333333333vw);
   grid-gap: min(50px, 2.5vw);
 }
 .wrapper > main > section:nth-child(1) {
@@ -283,7 +284,7 @@ body {
 }
 .wrapper > main > section:nth-child(2) > .projects-content > .project-card {
   display: grid;
-  grid-template-columns: min(462px, 26.3157894737vw) auto;
+  grid-template-columns: min(462px, 26.3157894737vw) min(511px, 33.3333333333vw);
   grid-gap: min(50px, 2.5vw);
 }
 .wrapper > main > section:nth-child(2) > .projects-content > .project-card > .project-card-image-container {
@@ -302,7 +303,7 @@ body {
 }
 .wrapper > main > section:nth-child(3) > .about-wrapper {
   display: grid;
-  grid-template-columns: min(462px, 26.3157894737vw) auto;
+  grid-template-columns: min(462px, 26.3157894737vw) min(511px, 33.3333333333vw);
   grid-gap: min(50px, 2.5vw);
 }
 .wrapper > main > section:nth-child(3) > .about-wrapper > .about-image-container {
@@ -315,7 +316,7 @@ body {
   grid-column: 1/-1;
   grid-row: 1/2;
   display: grid;
-  grid-template-columns: min(462px, 26.3157894737vw) auto;
+  grid-template-columns: min(462px, 26.3157894737vw) min(511px, 33.3333333333vw);
   grid-gap: min(50px, 2.5vw);
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-image-container {
@@ -334,21 +335,21 @@ body {
 }
 .wrapper > main > section:nth-child(5) > .education-wrapper {
   display: grid;
-  grid-template-columns: min(462px, 26.3157894737vw) auto;
+  grid-template-columns: min(462px, 26.3157894737vw) min(511px, 33.3333333333vw);
   grid-gap: min(150px, 6.6666666667vw);
 }
 .wrapper > main > section:nth-child(5) > .education-wrapper > .education-content-top {
   grid-column: 1/-1;
   grid-row: 1/2;
   display: grid;
-  grid-template-columns: min(462px, 26.3157894737vw) auto;
+  grid-template-columns: min(462px, 26.3157894737vw) min(511px, 33.3333333333vw);
   grid-gap: min(50px, 2.5vw);
 }
 .wrapper > main > section:nth-child(5) > .education-wrapper > .education-content-bottom {
   grid-column: 1/-1;
   grid-row: 2/3;
   display: grid;
-  grid-template-columns: min(462px, 26.3157894737vw) auto;
+  grid-template-columns: min(462px, 26.3157894737vw) min(511px, 33.3333333333vw);
   grid-gap: min(50px, 2.5vw);
 }
 .wrapper > main > section:nth-child(6) > .sayings-container {
@@ -363,7 +364,7 @@ body {
 }
 .wrapper > footer > .footer-content {
   display: grid;
-  grid-template-columns: min(462px, 26.3157894737vw) auto;
+  grid-template-columns: min(462px, 26.3157894737vw) min(511px, 33.3333333333vw);
   grid-gap: min(50px, 2.5vw);
 }
 .wrapper > footer > .footer-content > .footer-content-left {
@@ -377,7 +378,7 @@ body {
 }
 .wrapper > header > nav {
   display: grid;
-  grid-template-columns: min(462px, 26.3157894737vw) auto;
+  grid-template-columns: min(462px, 26.3157894737vw) min(511px, 33.3333333333vw);
   grid-gap: min(50px, 2.5vw);
 }
 .wrapper > header > nav > ul {
