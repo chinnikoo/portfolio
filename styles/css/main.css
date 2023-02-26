@@ -384,6 +384,7 @@ body {
 .wrapper > header > nav > ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .wrapper > header > nav > ul > li.active > a {
   color: #FF9C40;
@@ -470,13 +471,13 @@ body {
      object-fit: cover;
 }
 .wrapper > main > section:nth-child(2) > .projects-content > .project-card > .project-card-content-container > .language-used > span:nth-child(1) {
-  background-image: url("../../img/icons/html.png");
+  background-image: url("../../img/icons/colored-svg/html.svg");
 }
 .wrapper > main > section:nth-child(2) > .projects-content > .project-card > .project-card-content-container > .language-used > span:nth-child(2) {
-  background-image: url("../../img/icons/css.png");
+  background-image: url("../../img/icons/colored-svg/css.svg");
 }
 .wrapper > main > section:nth-child(2) > .projects-content > .project-card > .project-card-content-container > .language-used > span:nth-child(3) {
-  background-image: url("../../img/icons/javascript.png");
+  background-image: url("../../img/icons/colored-svg/javascript.svg");
 }
 .wrapper > main > section:nth-child(3) > .about-wrapper > .about-image-container {
   position: relative;
@@ -530,16 +531,16 @@ body {
   width: 100%;
 }
 .wrapper > main > section:nth-child(3) > .about-wrapper > .about-content-container > .about-content > .hobbies > span:nth-child(1)::after {
-  background-image: url("../../img/icons/game.png");
+  background-image: url("../../img/icons/game.svg");
 }
 .wrapper > main > section:nth-child(3) > .about-wrapper > .about-content-container > .about-content > .hobbies > span:nth-child(2)::after {
-  background-image: url("../../img/icons/code.png");
+  background-image: url("../../img/icons/code.svg");
 }
 .wrapper > main > section:nth-child(3) > .about-wrapper > .about-content-container > .about-content > .hobbies > span:nth-child(3)::after {
-  background-image: url("../../img/icons/film.png");
+  background-image: url("../../img/icons/film.svg");
 }
 .wrapper > main > section:nth-child(3) > .about-wrapper > .about-content-container > .about-content > .hobbies > span:nth-child(4)::after {
-  background-image: url("../../img/icons/music.png");
+  background-image: url("../../img/icons/music.svg");
 }
 .wrapper > main > section:nth-child(4) > .skills-container {
   overflow-x: hidden;
@@ -552,7 +553,7 @@ body {
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-image-container > .skills-image {
   position: relative;
-  height: min(400px, 25vw);
+  height: min(400px, 22.7272727273vw);
   width: 100%;
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-image-container > .skills-image > img {
@@ -565,9 +566,7 @@ body {
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container {
   width: 100%;
-  display: flex;
-  align-self: flex-end;
-  overflow-x: hidden;
+  margin-top: auto;
   padding-bottom: min(20px, 1vw);
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container::before {
@@ -576,7 +575,7 @@ body {
   left: 0;
   bottom: 0;
   background-color: #F4EDFF;
-  height: min(275px, 16.6666666667vw);
+  height: min(300px, 16.6666666667vw);
   width: 100%;
   border-radius: 15px;
   z-index: 1;
@@ -586,28 +585,49 @@ body {
   flex-direction: column;
   gap: min(20px, 1vw);
   position: relative;
+  bottom: min(10px, 1vw);
   width: 100%;
   padding-right: min(90px, 5.2631578947vw);
   z-index: 2;
 }
+.wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > h4 {
+  color: #9c7dcd;
+}
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > p {
   width: 80%;
-  color: #5F5F5F;
+  color: #a48cc9;
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > .skills {
   position: relative;
   overflow-x: auto;
   width: 100%;
+  padding-bottom: 20px;
   /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > .skills::-webkit-scrollbar {
-  width: 0px;
+  width: 10px;
+  height: 5px;
+}
+.wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > .skills::-webkit-scrollbar-track {
+  background: #FFF;
+  border-radius: 5px;
+}
+.wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > .skills::-webkit-scrollbar-thumb {
+  background: #dfd3f1;
+  border-radius: 5px;
+}
+.wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > .skills::-webkit-scrollbar-thumb:hover {
+  background: #c3ace5;
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > .skills > .language-used-scrollable {
   min-width: -moz-max-content;
   min-width: max-content;
   display: flex;
   gap: min(20px, 1vw);
+  width: 100%;
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > .skills > .language-used-scrollable > span {
   display: inline-block;
@@ -619,28 +639,28 @@ body {
      object-fit: cover;
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > .skills > .language-used-scrollable > span:nth-child(1) {
-  background-image: url("../../img/icons/html-skill.png");
+  background-image: url("../../img/icons/html-skill.svg");
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > .skills > .language-used-scrollable > span:nth-child(2) {
-  background-image: url("../../img/icons/css-skill.png");
+  background-image: url("../../img/icons/css-skill.svg");
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > .skills > .language-used-scrollable > span:nth-child(3) {
-  background-image: url("../../img/icons/javascript-skill.png");
+  background-image: url("../../img/icons/javascript-skill.svg");
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > .skills > .language-used-scrollable > span:nth-child(4) {
-  background-image: url("../../img/icons/sass.png");
+  background-image: url("../../img/icons/sass.svg");
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > .skills > .language-used-scrollable > span:nth-child(5) {
-  background-image: url("../../img/icons/figma.png");
+  background-image: url("../../img/icons/figma.svg");
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > .skills > .language-used-scrollable > span:nth-child(6) {
-  background-image: url("../../img/icons/sql.png");
+  background-image: url("../../img/icons/sql.svg");
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > .skills > .language-used-scrollable > span:nth-child(7) {
-  background-image: url("../../img/icons/java.png");
+  background-image: url("../../img/icons/java.svg");
 }
 .wrapper > main > section:nth-child(4) > .skills-container > .skills-content-container > .skills-content > .skills > .language-used-scrollable > span:nth-child(8) {
-  background-image: url("../../img/icons/git.png");
+  background-image: url("../../img/icons/git.svg");
 }
 .wrapper > main > section:nth-child(5) > .education-wrapper > .education-content-top > .content-top-info {
   display: flex;
@@ -873,7 +893,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(../../img/icons/submit.png);
+  background-image: url("../../img/icons/submit.svg");
   background-repeat: no-repeat;
   background-size: cover;
   -o-object-fit: cover;
