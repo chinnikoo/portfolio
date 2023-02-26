@@ -415,7 +415,7 @@ body {
 }
 .wrapper > main > section:nth-child(1) > .hero-image-container {
   position: relative;
-  height: min(450px, 26.1096605744vw);
+  height: min(450px, 20.7039337474vw);
 }
 .wrapper > main > section:nth-child(1) > .hero-image-container > .hero-image {
   height: 100%;
