@@ -28,7 +28,6 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    @include respond-to(laptop){ display: none; }
 
     & > .blobs-wrapper {
         position: relative;
@@ -45,12 +44,12 @@ body {
             aspect-ratio: 1;
             height: fit-content;
     
-            &.blobs1 { background-image: url("../../img/blobs/blob1.svg"); width: 525px; top: 600px; left: -245px; }
-            &.blobs2 { background-image: url("../../img/blobs/blob2.svg"); width: 583px; top: 910px; right: -245px; }
-            &.blobs3 { background-image: url("../../img/blobs/blob3.svg"); width: 277px; top: 1740px; right: 262px; }
-            &.blobs4 { background-image: url("../../img/blobs/blob4.svg"); width: 305px; top: 3039px; left: -85px; }
-            &.blobs5 { background-image: url("../../img/blobs/blob5.svg"); width: 224px; top: 3922px; right: -60px; }
-            &.blobs6 { background-image: url("../../img/blobs/blob6.svg"); width: 644px; bottom: -556px; left: 400px; }
+            &.blobs1 { background-image: url("../../img/blobs/blob1.svg"); width: Min(525px, 100vw/3.2); top: Min(600px, 100vw/2.5); left: Min(-45px, -18.3266475645vw); }
+            &.blobs2 { background-image: url("../../img/blobs/blob2.svg"); width: Min(583px, 100vw/3); top: Min(910px, 100vw/1.6); right: Min(-105px, -14.3266475645vw); }
+            &.blobs3 { background-image: url("../../img/blobs/blob3.svg"); width: Min(277px, 100vw/6.3); top: Min(1740px, 100vw/0.97); right: Min(262px, 100vw/5.7); }
+            &.blobs4 { background-image: url("../../img/blobs/blob4.svg"); width: Min(305px,11.9253731343vw); top: Min(3039px,172.4137931034vw); left: Min(-25px,-1vw); }
+            &.blobs5 { background-image: url("../../img/blobs/blob5.svg"); width: Min(224px, 100vw/12); top: min(3922px, 256.2702702703vw); right: Min(-20px,-1.571429vw); }
+            &.blobs6 { background-image: url("../../img/blobs/blob6.svg"); width: Min(644px, 100vw/3); bottom: Min(-300px, -27.326648vw); left: Min(400px, 100vw/3.8); }
         }
     }
 }
@@ -279,7 +278,7 @@ body {
                     }
 
                     & > button {
-                        padding: 15px 50px;
+                        padding: Min(15px, 100vw/100) Min(50px, 100vw/35);
                         border-radius: 5px;
                         background-color: $cyan-bg;
                         color: $white-text;
@@ -473,7 +472,7 @@ body {
                         left: 0;
                         bottom: 0;
                         background-color: $violet-bg;
-                        height: Min(300px, 100vw/6);
+                        height: Min(300px, 100vw/5.5);
                         width: 100%;
                         border-radius: 15px;
                         z-index: 1;
@@ -576,7 +575,7 @@ body {
                             display: flex;
                             flex-direction: column;
                             align-self: flex-end;
-                            gap: 30px;
+                            gap: Min(30px, 100vw/70);
 
                             & > span {
                                 color: $light-grey-text;
@@ -619,7 +618,7 @@ body {
                             width: 90%;
                             display: flex;
                             flex-direction: column;
-                            gap: 30px;
+                            gap: Min(30px, 100vw/70);
                             padding-left: 80px;
 
                             & > span {

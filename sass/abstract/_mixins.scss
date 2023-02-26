@@ -6,7 +6,7 @@
             @content;
         }
     } @else if $breakpoint == 'mobile-horizontal' {
-        @media screen and (min-width: $mobile + 1) and (max-width: $mobile-horizontal){
+        @media screen and (min-width: #{$mobile + 1}) and (max-width: $mobile-horizontal){
             @content;
         }
     } @else if $breakpoint == 'laptop' {
@@ -14,7 +14,7 @@
             @content;
         }
     } @else if $breakpoint == 'desktop' {
-        @media screen and (min-width: $laptop-max + 1) and (max-width: $desktop){
+        @media screen and (min-width: #{$laptop-max + 1}) and (max-width: $desktop){
             @content;
         }
     }
