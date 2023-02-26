@@ -449,7 +449,8 @@ body {
 
                     & > .skills-image {
                         position: relative;
-                        height: Min(400px, 100vw/4.3);
+                        // height: Min(400px, 100vw/4.9);
+                        height: Min(400px, 100vw/4);
                         width: 100%;
 
                         & > img {
@@ -475,6 +476,7 @@ body {
                         left: 0;
                         bottom: 0;
                         background-color: $violet-bg;
+                        // height: Min(275px, 100vw/6.8);
                         height: Min(275px, 100vw/6);
                         width: 100%;
                         border-radius: 15px;
@@ -491,7 +493,7 @@ body {
                         z-index: 2;
 
                         & > p {
-                            width: 90%;
+                            width: 80%;
                             color: $light-grey-text;
                         }
 
