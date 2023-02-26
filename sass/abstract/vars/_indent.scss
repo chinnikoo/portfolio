@@ -2,6 +2,6 @@ $section-space: Min(80px, 100vw/20);
 $title-and-content-space: 40px;
 $body-space: Min(440px, 100vw/5.6);
 $footer-space: 100px;
-$grid-size: Min(462px, 100vw/3.8) Min(511px, 100vw/3);
+$grid-size: Min(462px, 100vw/3.8) auto;
 $grid-gap-size: Min(50px, 100vw/40);
 $grid-gap-size-big: Min(150px, 100vw/15);
